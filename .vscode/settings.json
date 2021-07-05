@@ -1,0 +1,23 @@
+{
+	"editor.insertSpaces": true,
+	"files.exclude": {
+		".editorconfig": true,
+		".vscode/tasks.json": true,
+		".browserslistrc": true,
+		"e2e": true,
+		"karma.conf.js": true,
+		"node_modules": true,
+		"package-lock.json": true,
+		"README.md": true,
+		"src/app/app.component.spec.ts": true,
+		"src/assets/": true,
+		"src/environments": true,
+		"src/favicon.ico": true,
+		"src/main.ts": true,
+		"src/polyfills.ts": true,
+		"tsconfig.*": true,
+		"tslint.json": true,
+    "src/test.ts": true,
+  },
+  "js/ts.implicitProjectConfig.experimentalDecorators": false
+}
