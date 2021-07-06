@@ -13,7 +13,7 @@
 		"src/assets/": true,
 		"src/environments": true,
 		"src/favicon.ico": true,
-		"src/main.ts": true,
+		// "src/main.ts": true,
 		"src/polyfills.ts": true,
 		"tsconfig.*": true,
 		"tslint.json": true,
