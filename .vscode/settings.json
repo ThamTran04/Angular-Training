@@ -15,7 +15,7 @@
 		"src/favicon.ico": true,
 		// "src/main.ts": true,
 		"src/polyfills.ts": true,
-		"tsconfig.*": true,
+		// "tsconfig.*": true,
 		"tslint.json": true,
     "src/test.ts": true,
   },
