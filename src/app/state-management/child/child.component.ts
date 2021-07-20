@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'child',
@@ -12,7 +12,12 @@ export class ChildComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Input()
-  count: number | undefined;
+  @Input() count: number | undefined;
+
+  @Input('total') total : number | undefined;
+
+  ngOnChanges(simpleChange : SimpleChanges) {
+        console.log(simpleChange);
+    }
 
 }

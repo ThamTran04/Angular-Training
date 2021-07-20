@@ -1,4 +1,34 @@
+<div class="container">
 <button (click)="increment()">Increment</button> <br><br>
 <button (click)="decrement()">decrement</button>
-
 <child [count]=Counter></child>
+
+</div>
+
+<!-- @Input with ngOnChange -->
+<div class="container"
+     [style.margin-top.px]="50">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+        </div>
+        <div class="panel-body">
+          <ng-container *ngIf="isShowing">
+            <!-- one time having the total, il will be sent to child component -->
+            <child [total]="total"></child>
+          </ng-container>
+          first number : <input type="number"
+                 class="form-control"
+                 [(ngModel)]="num1">
+          second number : <input type="number"
+                 class="form-control"
+                 [(ngModel)]="num2">
+          <button type="button"
+                  class="btn btn-primary"
+                  (click)="totalNumber()">Sum</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
